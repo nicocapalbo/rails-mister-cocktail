@@ -1,0 +1,8 @@
+<h2>Create new cocktails</h2>
+<br>
+<%= simple_form_for @cocktail do |cocktail| %>
+  <%= cocktail.error_notification %>
+  <%= cocktail.input :name %>
+  <%= cocktail.button :submit, class: "btn-primary" %>
+  <%= link_to "Cancel", cocktails_path, class: "btn btn-secondary" %>
+<% end %>
